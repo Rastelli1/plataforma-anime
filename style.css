@@ -1,0 +1,197 @@
+ 
+
+ *{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+ }
+
+ 
+ 
+
+ .principal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1%;
+    background-color: #333;
+    color: #fff; 
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.principal li{
+    border-radius: 30px;
+    margin-right: 1rem;
+    font-size: 20px 
+    
+}
+#logo h1 {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+#nav-menu ul {
+    overflow: hidden;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.centered-container{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.input-search {
+    border-radius: 30px;
+    background-color: #535252;
+    color: rgb(158, 158, 158);
+    font-size: 1.7rem;
+    height: 100%;
+    width: 200px;
+    border: solid 2px black;
+    box-sizing: border-box; 
+    text-indent: 20px; 
+}
+
+.search-button {
+    background-color: #333;
+    border: none; 
+    padding: 10px; 
+    cursor: pointer;
+    color: rgb(158, 158, 158);
+    margin-left: 10px; 
+}
+
+.seccion{
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom , rgb(0 0 0/ .55),rgb(0 0 0/ .55)), url(https://s1.zerochan.net/Tsuki.ga.Michibiku.Isekai.Douchuu.600.3104014.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrap-text{
+    color: white;
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+
+li {
+    padding: 1rem ;
+    font-weight: bold;
+}
+
+ul li:hover {
+    color: aqua;
+    background-color: black;
+}
+
+
+h1, h2 {
+    color: white;
+    border-radius: 20px; 
+    padding: 10px; 
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.title-anim{
+    color: white;
+    text-align: center;
+}
+
+.titles {
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.anime-list a {
+    position: relative;
+    display: block;
+    color: #fff;
+    overflow: hidden;
+}
+.img-anim  img {
+    border-radius: 15px;
+}
+
+
+.en-emision{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.en-emision h1{
+    margin-left: 2rem;
+}
+
+
+.more-button{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.more{
+    background-color:  #535252;
+    display: inline-block;
+    border-radius: 30px;
+    color: rgb(158, 158, 158);
+    height: 50px;
+    margin:30px 0px ;
+    outline: none;
+    padding: 0px 20px;
+    width: 100px;
+    border: solid 2px black;
+}
+
+.footers{
+
+    background-color: #333;;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px; 
+    height: 150px; 
+}
