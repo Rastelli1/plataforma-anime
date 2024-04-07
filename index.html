@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeXD</title>
     <script src="https://kit.fontawesome.com/ca8e96e71b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -14,48 +14,41 @@
 </head>
 <body>
     <header >
-        
-        <div class="principal">
+        <input type="checkbox" id="check">
+        <nav id="nav-menu">
+            
+            <label class="logo" ><a href="">AnimeXD</a></label>
 
-            <div id="logo">
-                <h1 class=" animate__animated animate__lightSpeedInLeft" >AnimeXD</h1>
+            <div class="search-box"action="">
+                <input  type="search" placeholder="Buscar...">
+                <span class="fa-solid fa-magnifying-glass fa-3x"></span>
             </div>
 
-            <form class="centered-container"action="">
-                <input class="input-search" type="text" placeholder="Buscar...">
-                <button class="search-button">
-                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-                </button>
-            </form>
-
-            <nav id="nav-menu">
-                <ul>
-                    <li>Directorio anime</li>
-                    <li><i class="fa-solid fa-users"></i> Iniciar Sesión</li>
-                </ul>
-            </nav>
-
-        </div>
+            <ul>
+                <li><a class="active" href="">Directorio Anime</a></li>
+                <li> <a href="form-login.html" target="_self" >Iniciar Sesión <i class="fa-solid fa-users"></i></a> </li>
+            </ul>
+            <label for="check" class="bar">
+                <span class="fa-solid fa-bars" id="bars"> </span>
+                <span class="fa-solid fa-xmark" id="X"></span>
+            </label>
+        </nav>
+        <section class="seccion">
+            <article>
+                <h1 class=" animate__animated animate__zoomIn"  >Todos tus animes en un solo lugar</h1>
+                <hr>
+                <h2 class=" animate__animated animate__zoomIn" >GRATIIS!!</h2>
+            </article>
+        </section>
     </header> 
     
     <main>
         
-        <section class="seccion">
-
-            <article class="wrap-text">
-                <h1 class=" animate__animated animate__zoomIn" >Todos tus animes en un solo lugar</h1>
-                <hr>
-                <h2 class=" animate__animated animate__zoomIn">GRATIIS!!</h2>
-            </article>
-        </section>
-
         
-        <hr>
         
-
         
         <section class="en-emision">
-
+            
             <h1 class="title">✨Animes en Emision✨</h1>
             <br>
 
@@ -218,12 +211,14 @@
             <form class="more-button">
                 <button class="more">Ver Mas</button>
             </form>
+
+            <hr>
         </section>
         
         
 
         
-        <hr>
+        
         
         
         

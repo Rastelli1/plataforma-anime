@@ -1,0 +1,412 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* comienzo del nav */
+nav {
+    background: #333;
+    width: 100%;
+    display: flex; /* Usa flexbox para centrar horizontalmente el contenido */
+    
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    padding: 15px 30px;
+}
+
+label.logo a {
+    color: rgb(31, 174, 174);
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px; /* Aumentar el espacio a los lados del enlace */
+    border-radius: 1rem;
+    transition: background .5s; /* Agregar transición al cambio de color de fondo */
+    font-weight: bold;
+}
+
+nav ul a.active, nav ul a:hover {
+    background: rgb(31, 174, 174);
+    transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+ nav .search-box {
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search-box input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #535252;
+    height: 100%; /* Ajusta la altura según necesites */
+    padding: 0px 10px;
+    font-size: 20px;
+    width:370px ;
+    text-indent: 20px;
+    color: #bab6b6;
+}
+
+
+nav .search-box span{
+    border-radius: 1px;
+    color: black;
+    font-size: 20px;
+    background: gray;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+}
+nav .search-box span:hover{
+    color: #fff;
+}
+nav .search-box span::after{
+    height: 100%;
+    width:0%;
+    content: "";
+    background: rgb(31, 174, 174);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search-box span:hover::after{
+    width: 100%;
+}
+
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+nav .bar span{
+    position:absolute;
+    color: #535252;
+    font-size: 35px;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
+.seccion  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    top: 0; 
+    font-size: 30px;
+    animation: cambioFondo 15s infinite alternate;
+    
+}
+.seccion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 1%, 
+        rgba(0, 0, 0, 0.3) 50%, 
+        rgba(0, 0, 0, 1) 100% 
+    );
+    z-index: -1; 
+    
+}
+
+.seccion article  {
+    color: white;
+    text-align: center;
+    z-index: 1 ; 
+    position: relative;
+    filter: none;
+  
+}
+
+@keyframes cambioFondo {
+    0% {
+        background-image: url('https://los40.cl/wp-content/uploads/2020/07/c30559483c39ad85286d68ea4e9fb78f-1024x576.jpg');
+        filter: brightness(0.90);
+    }
+    33% {
+        background-image: url('https://p325k7wa.twic.pics/high/my-hero-academia/my-hero-ultra-rumble/00-page-setup/MHUR-new-header-mobile.jpg?twic=v1/resize=760/step=10/quality=80');
+        filter: brightness(0.90);
+    }
+    66% {
+        background-image: url('https://www.alertageekchile.cl/wp-content/uploads/2022/12/Banner-noticia-Suzume.jpg');
+        filter: brightness(0.90);
+    }
+    100% {
+        background-image: url('https://areajugones.sport.es/wp-content/uploads/2022/03/one-piece-bien.jpg');
+        filter: brightness(0.90);
+        
+    }
+}
+
+@media screen and (max-width:1200px){
+    
+    nav{
+        display: block;
+        padding: 0;
+    }
+    
+    nav .logo a{
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+    
+    nav .search-box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    nav .search-box input{
+        width: 90%;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background:#333;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s 0.1s all;
+        
+    }
+    
+    nav ul li{
+        text-align: center;
+        transition: 0.3s;
+        opacity: 0;
+    }
+    
+    nav ul li:nth-child(1){
+        transform: translateX(-150px);
+    }
+    nav ul li:nth-child(2){
+        transform: translateX(-200px);
+    }
+    nav ul li a{
+        color: black;
+        font-size: 28px;
+        padding: 25px;
+        display: block;
+    }
+    
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    
+    nav .bar #X{
+        display: none;
+    }
+    
+    #check:checked ~ nav .bar #X{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height: 200px;
+    }
+    #check:checked ~ nav ul li:nth-child(1),#check:checked ~ nav ul li:nth-child(2){
+        
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .seccion   {
+        width: 100%;
+        height: 300px;
+    }
+    .seccion article  {
+        text-align: center;
+        font-size: 40%;
+    }
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.login-contenedor{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: -400;
+    
+}
+.login-contenedor form{
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    
+}
+
+
+/* fin del nav */
+.wrap-text{
+    color: white;
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+
+.anime-list li {
+    padding: 1rem ;
+    font-weight: bold;
+}
+
+
+
+h1, h2 {
+    color: white;
+    border-radius: 20px; 
+    padding: 10px; 
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.title-anim{
+    color: white;
+    text-align: center;
+}
+
+.titles {
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.anime-list a {
+    position: relative;
+    display: block;
+    color: #fff;
+    overflow: hidden;
+}
+.img-anim  img {
+    border-radius: 15px;
+}
+
+.anime-list li:hover{
+    transform: scale(1.1); 
+}
+
+.en-emision{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.en-emision h1{
+    margin-left: 2rem;
+    justify-content: center;
+}
+
+
+.more-button{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.more{
+    background-color:  #535252;
+    display: inline-block;
+    border-radius: 30px;
+    color: rgb(158, 158, 158);
+    height: 50px;
+    margin:30px 0px ;
+    outline: none;
+    padding: 0px 20px;
+    width: 100px;
+    border: solid 2px black;
+}
+
+.footers{
+    display: inline-block;
+    background-color: #333;;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px; 
+    height: 80px;
+    width: 100%;
+}
