@@ -11,7 +11,7 @@
 nav {
     background: #333;
     width: 100%;
-    display: flex; /* Usa flexbox para centrar horizontalmente el contenido */
+    display: flex; 
     
     justify-content: space-between;
     text-align: center;
@@ -44,9 +44,9 @@ nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding: 5px 10px; /* Aumentar el espacio a los lados del enlace */
+    padding: 5px 10px; 
     border-radius: 1rem;
-    transition: background .5s; /* Agregar transición al cambio de color de fondo */
+    transition: background .5s; 
     font-weight: bold;
 }
 
@@ -160,6 +160,21 @@ input[type="checkbox"]{
     position: relative;
     filter: none;
   
+}
+.seccion article button{
+    background-color:  #9a5353;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    outline: none;
+    width: 200px;
+    border: solid 2px black;
+}
+
+.seccion article button:hover{
+    background-color:  #cb4848;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 @keyframes cambioFondo {
@@ -295,6 +310,8 @@ nav li{
 
 
 /* fin del nav */
+
+
 .wrap-text{
     color: white;
     font-size: 50px;
@@ -392,7 +409,7 @@ img {
     background-color:  #535252;
     display: inline-block;
     border-radius: 30px;
-    color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
     height: 50px;
     margin:30px 0px ;
     outline: none;
@@ -401,6 +418,11 @@ img {
     border: solid 2px black;
 }
 
+.more:hover{
+    background-color: rgb(96, 165, 165);
+    transition: 0.3s;
+    cursor: pointer;
+}
 .footers{
     display: inline-block;
     background-color: #333;;
