@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeXD</title>
     <script src="https://kit.fontawesome.com/ca8e96e71b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -14,48 +14,40 @@
 </head>
 <body>
     <header >
-        
-        <div class="principal">
+        <input type="checkbox" id="check">
+        <nav id="nav-menu">
+            
+            <label class="logo" ><a href="index.html">AnimeXD</a></label>
 
-            <div id="logo">
-                <h1 class=" animate__animated animate__lightSpeedInLeft" >AnimeXD</h1>
+            <div class="search-box"action="">
+                <input  type="search" placeholder="Buscar...">
+                <span class="fa-solid fa-magnifying-glass fa-3x"></span>
             </div>
 
-            <form class="centered-container"action="">
-                <input class="input-search" type="text" placeholder="Buscar...">
-                <button class="search-button">
-                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-                </button>
-            </form>
-
-            <nav id="nav-menu">
-                <ul>
-                    <li>Directorio anime</li>
-                    <li><i class="fa-solid fa-users"></i> Iniciar Sesión</li>
-                </ul>
-            </nav>
-
-        </div>
+            <ul>
+                <li><a class="active" href="">Directorio Anime</a></li>
+                <li> <a href="form-login.html" target="_self" >Iniciar Sesión <i class="fa-solid fa-users"></i></a> </li>
+            </ul>
+            <label for="check" class="bar">
+                <span class="fa-solid fa-bars" id="bars"> </span>
+                <span class="fa-solid fa-xmark" id="X"></span>
+            </label>
+        </nav>
+        <section class="seccion">
+            <article>
+                <h1 class=" animate__animated animate__zoomIn"  >Todos tus animes en un solo lugar</h1>
+                <hr>
+                <h2 class=" animate__animated animate__zoomIn" >GRATIIS!!</h2>
+               
+                <a href="form-register.html"> <button >Registrarse</button></a>
+            </article>
+        </section>
     </header> 
     
     <main>
         
-        <section class="seccion">
-
-            <article class="wrap-text">
-                <h1 class=" animate__animated animate__zoomIn" >Todos tus animes en un solo lugar</h1>
-                <hr>
-                <h2 class=" animate__animated animate__zoomIn">GRATIIS!!</h2>
-            </article>
-        </section>
-
-        
-        <hr>
-        
-
-        
         <section class="en-emision">
-
+            
             <h1 class="title">✨Animes en Emision✨</h1>
             <br>
 
@@ -218,14 +210,9 @@
             <form class="more-button">
                 <button class="more">Ver Mas</button>
             </form>
-        </section>
-        
-        
 
-        
-        <hr>
-        
-        
+            <hr>
+        </section>
         
         <section class="en-emision">
             <h1 class="title"> 🥇 Mejores animes 🥇</h1>
@@ -310,7 +297,90 @@
             <form action="" class="more-button">
                 <button class="more">Ver Mas</button>
             </form>
+            <hr>
+            
         </section>
+        <section class="en-emision">
+            <h1 class="title"> 🌸🌸Temporada Primavera 🌸🌸 </h1>
+            <br>
+            <ul class="wrapper">
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3909.jpg" alt="">
+                        </span>
+                        <strong class="titles">Kusuriya no Hitorigoto</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3836.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Jujutsu Kaisen</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3431.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Boku no Hero</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3934.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Kyuujitsu no Warumono-san</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3801.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Kimetsu no yaiba</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3175.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Given</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3855.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">One Piece</strong>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="" class="item">
+                        <span class="img-anim">
+                            <img class="img-anim" src="https://www3.animeflv.net/uploads/animes/covers/3935.jpg" alt="">
+                        </span>
+                        <strong class="titles-wrap">Tsuki ga Michibiku</strong>
+                    </a>
+                </li>
+
+            </ul>
+            
+        </section>
+        
 
     </main>
 
