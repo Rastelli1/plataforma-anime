@@ -120,7 +120,6 @@ nav .bar span{
     font-size: 35px;
 }
 input[type="checkbox"]{
-    -webkit-appearance: none;
     display: none;
 }
 .seccion  {
