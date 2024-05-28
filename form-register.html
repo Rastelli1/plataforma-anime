@@ -16,27 +16,36 @@
      <!-- formulario registro -->
      <div class="register-contenedor">
         
-        <form action="" class="form-register">
+        <form action="" class="form-register" id="form">
             <h2>Registro</h2>
 
             <div class="contenedor">
-                <input type="text" name="nombre" placeholder="Nombre Completo" required>
-            </div>
-
-            <div class="contenedor">
-                <input type="text" name="apellido" placeholder="Apellido">
-            </div>
-
-            <div class="contenedor">
-                <input type="email" name="correo" placeholder="Correo Electronico" required>
+                <input type="text"  placeholder="Nombre Completo" id="name">
+                <div id="error-name" class="error-message"></div>
             </div>
             
-            <div class="contenedor">
-                <input type="password" name="contraseña" placeholder="Contraseña">
-            </div>
 
             <div class="contenedor">
-                <select name="nacionalidad" >
+                <input type="text"  placeholder="Apellido" id="last-name">
+                <div id="error-last-name" class="error-message"></div>
+            </div>
+            
+
+            <div class="contenedor">
+                <input type="email"  placeholder="Correo Electronico" id="email">
+                <div id="error-email" class="error-message"></div>
+            </div>
+            
+            
+            <div class="contenedor">
+                <input type="password"  placeholder="Contraseña" id="password">
+                <div id="error-password" class="error-message"></div>
+            </div>
+            
+
+            <div class="contenedor">
+                <select  id="nacionalidad"  >
+                    <option value="">Seleccione su nacionalidad</option>
                     <option value="Alemania">Alemania</option>
                     <option value="Australia">Australia</option>
                     <option value="Canadá">Canadá</option>
@@ -74,16 +83,22 @@
                     <option value="Uruguay">Uruguay</option>
                     <option value="Venezuela">Venezuela</option>
                 </select>
+                <div id="error-nacionalidad" class="error-message"></div>
             </div>
+            
 
             <div class="contenedor">
-                <input type="date" name="date">
+                <input type="date"  id="date">
+                <div id="error-date" class="error-message"></div>
             </div>
+            
 
             <div class="checkbox">
-                <input type="checkbox" id="checkbox" required>
+                <input type="checkbox"  id="checkbox">
                 <label for="checkbox">Acepto todos los terminos</label>
+                <div id="error-checkBox" class="error-message"></div>
             </div>
+            
 
 
             
@@ -91,15 +106,8 @@
 
         
         </form>
-        <!-- formulario de registro-->
-
-        <!-- <form action="" class="form-register">
-            <h2>Registrarse</h2>
-            <input type="text" name="nombre" placeholder="Nombre completo">
-            <input type="email" name="correo" placeholder="Correo Electronico">
-            <input type="password" name="contraseña" placeholder="Contraseña">
-            <button>Registrarse</button>
-        </form> -->
+        
     </div>
+    <script src="/js/validacion_register.js"></script>
 </body>
 </html>

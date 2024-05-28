@@ -111,14 +111,12 @@ input[type="submit"]:hover{
 }
 .checkbox{
     display: flex;
-    gap: 5px;
     align-items: center;
-    margin-bottom: 1rem;
-    margin-bottom: 1rem;
     font-size: 15px;
     color: #000000;
     outline: none;
     user-select: none;
+    padding: 5% 0;
 }
 @media screen and (max-width:1200px){
     
@@ -151,4 +149,20 @@ input[type="submit"]:hover{
         background: none ;
         outline: none;
     }
+}
+
+/* Estilos  para el formulario y los contenedores */
+.contenedor, .checkbox {
+    position: relative; 
+}
+
+/*  mensajes de error */
+.error-message {
+    color: red;
+    position: absolute;
+    top: 30%; 
+    left: 0;
+    width: 100%; 
+    z-index: 10; 
+    font-size: 15px;
 }
