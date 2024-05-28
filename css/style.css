@@ -277,6 +277,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
 
 .anime-list a {

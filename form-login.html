@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/style-login.css">
+    
 </head>
 <body>
     <header>
@@ -16,14 +17,21 @@
          <!-- formulario de login y registro -->
      <div class="login-contenedor">
         <!-- formulario de login -->
-        <form action="" class="form-login">
+        <form action="" class="form-login" id="formulario">
             <h2>Iniciar Sesion</h2>
-            <div class="correo">
-                <input type="email" name="correo" placeholder="Correo Electronico" required>
+
+            <div class="contenedor">
+                <input type="email" id="correo" placeholder="Correo Electronico" >
+                <div id="error-email" class="messageError"></div>
             </div>
-            <div class="contraseña">
-                <input type="password" name="contraseña" placeholder="Contraseña">
+            
+            
+            <div class="contenedor">
+                <input type="password" id="contraseña" placeholder="Contraseña">
+                <div id="error-password" class="messageError"></div>
             </div>
+            
+            
             <div class="recordar">
                 <p>¿olvido su contraseña?</p>
             </div>
@@ -34,8 +42,9 @@
                 Quiero <a href="form-register.html">Registrarme</a>
             </div>
         </form>
+        
     </div>
     </main>
-    
+    <script src="/js/validacion_login.js"></script>
 </body>
 </html>
